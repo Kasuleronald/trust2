@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog | Trust Construction Company</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/trust2.png" type="image/png">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/trust.png" alt="Trust Construction Company Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="current"><a href="catalog.html"><i class="fas fa-list"></i> Catalog</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Product Catalog</h1>
+            <p>Browse our wide selection of quality construction materials</p>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog-filters">
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="all">All Categories</option>
+                        <option value="bathroom">Bathroom Fixtures</option>
+                        <option value="flooring">Flooring Solutions</option>
+                        <option value="wall">Wall Panels</option>
+                        <option value="access">Smart Access Systems</option>
+                        <option value="wc">Water Closets</option>
+                        <option value="spc">SPC Flooring</option>
+                        <option value="wpc">WPC Decking</option>
+                        <option value="locks">Hotel Smart Locks</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort">
+                        <option value="popular">Most Popular</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Product Name</option>
+                    </select>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search products...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card" data-category="bathroom">
+                    <img src="images/bathroom-fixtures.jpg" alt="Bathroom Fixtures">
+                    <h3>Bathroom Fixtures</h3>
+                    <p>High quality faucets, showers and accessories</p>
+                    <span class="price">From 25,000 RWF</span>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="flooring">
+                    <img src="images/flooring-solutions.jpg" alt="Flooring Solutions">
+                    <h3>Flooring Solutions</h3>
+                    <p>Various flooring options for all spaces</p>
+                    <span class="price">From 20,000 RWF/m²</span>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="wall">
+                    <img src="images/wall-panels.jpg" alt="Wall Panels">
+                    <h3>Wall Panels</h3>
+                    <p>Modern decorative wall covering solutions</p>
+                    <span class="price">From 15,000 RWF/m²</span>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="access">
+                    <img src="images/smart-access.jpg" alt="Smart Access Systems">
+                    <h3>Smart Access Systems</h3>
+                    <p>Electronic access control solutions</p>
+                    <span class="price">From 50,000 RWF</span>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="wc">
+                    <img src="images/water-closets.jpg" alt="Water Closets">
+                    <h3>Water Closets</h3>
+                    <p>Modern and efficient toilet solutions</p>
+                    <span class="price">From 35,000 RWF</span>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="spc">
+                    <img src="images/spc-flooring.jpg" alt="SPC Flooring">
+                    <h3>SPC Flooring</h3>
+                    <p>Stone Plastic Composite waterproof flooring</p>
+                    <span class="price">From 30,000 RWF/m²</span>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="wpc">
+                    <img src="images/wpc-decking.jpg" alt="WPC Decking">
+                    <h3>WPC Decking</h3>
+                    <p>Wood Plastic Composite outdoor flooring</p>
+                    <span class="price">From 40,000 RWF/m²</span>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="locks">
+                    <img src="images/smart-locks.jpg" alt="Hotel Smart Locks">
+                    <h3>Hotel Smart Locks</h3>
+                    <p>Electronic locking systems for hospitality</p>
+                    <span class="price">From 75,000 RWF</span>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <div class="container footer-flex">
+        <!-- Column 1: Trust Construction, Logo, Phrase, Social Links -->
+        <div class="footer-col">
+            <!--h3>Trust Construction</h3-->
+            <img src="images/trustinv.png" alt="Trust Construction Company Logo" class="footer-logo">
+            <p>Your trusted partner for quality construction materials in Kigali.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="catalog.html"><i class="fas fa-list"></i> Catalog</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
+            </ul>
+        </div>
+        <!-- Column 3: Locations and Business Hours -->
+        <div class="footer-col">
+            <h3>Locations</h3>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Kicukiro Branch:</strong> Chez John Building, Kicukiro, Kigali</p>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Gisozi Branch:</strong> Umukundo Center, Gisozi, Kigali</p>
+            <h3 style="margin-top:20px;">Business Hours</h3>
+            <p><i class="fas fa-clock"></i> Monday - Saturday: 9:00 AM - 6:00 PM</p>
+            <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Trust Construction Company. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
